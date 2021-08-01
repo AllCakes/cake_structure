@@ -1,0 +1,413 @@
+// 홈페이지 html
+<div class="container">
+  <div class="head"></div>
+  <div class="body">
+    <div class="캐러셀"></div>
+    <div class="컨">
+      <div class="오늘의-케이크">
+        <div class="오늘의-케이크-head"></div>
+        <div class="오늘의-케이크-container">
+          <div class="오늘의-케이크-item1"></div>
+          <div class="오늘의-케이크-item2"></div>
+          <div class="오늘의-케이크-item3"></div>
+          <div class="오늘의-케이크-item4"></div>
+        </div>
+      </div>
+      <div class="최신리뷰">
+        <div class="최신리뷰-head"></div>
+        <div class="최신-리뷰-container">
+          <div class="최신-리뷰-item1"></div>
+          <div class="최신리뷰-item2"></div>
+          <div class="최신리뷰-item3"></div>
+          <div class="최신리뷰-item4"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer"></div>
+</div>
+
+// 홈페이지 css
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 106px 3.8fr 150px;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "head"
+    "body"
+    "footer";
+}
+
+.head { grid-area: head; }
+
+.body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 617px 600px;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "캐러셀"
+    "컨";
+  grid-area: body;
+}
+
+.캐러셀 { grid-area: 캐러셀; }
+
+.컨 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 250px 350px;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "오늘의-케이크"
+    "최신리뷰";
+  grid-area: 컨;
+}
+
+.오늘의-케이크 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 70px 180fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "오늘의-케이크-head"
+    "오늘의-케이크-container";
+  grid-area: 오늘의-케이크;
+}
+
+.오늘의-케이크-head { grid-area: 오늘의-케이크-head; }
+
+.오늘의-케이크-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "오늘의-케이크-item1 오늘의-케이크-item2 오늘의-케이크-item3 오늘의-케이크-item4";
+  grid-area: 오늘의-케이크-container;
+}
+
+.오늘의-케이크-item1 { grid-area: 오늘의-케이크-item1; }
+
+.오늘의-케이크-item2 { grid-area: 오늘의-케이크-item2; }
+
+.오늘의-케이크-item3 { grid-area: 오늘의-케이크-item3; }
+
+.오늘의-케이크-item4 { grid-area: 오늘의-케이크-item4; }
+
+.최신리뷰 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 70px fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "최신리뷰-head"
+    "최신-리뷰-container";
+  grid-area: 최신리뷰;
+}
+
+.최신리뷰-head { grid-area: 최신리뷰-head; }
+
+.최신-리뷰-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "최신-리뷰-item1 최신리뷰-item2"
+    "최신리뷰-item3 최신리뷰-item4";
+  grid-area: 최신-리뷰-container;
+}
+
+.최신-리뷰-item1 { grid-area: 최신-리뷰-item1; }
+
+.최신리뷰-item2 { grid-area: 최신리뷰-item2; }
+
+.최신리뷰-item3 { grid-area: 최신리뷰-item3; }
+
+.최신리뷰-item4 { grid-area: 최신리뷰-item4; }
+
+.footer { grid-area: footer; }
+
+
+
+// 검색결과 페이지 html
+<div class="container">
+  <div class="header"></div>
+  <div class="footer"></div>
+  <div class="body">
+    <div class="search-info"></div>
+    <div class="search-result">
+      <div class="search-item1"></div>
+      <div class="search-item2"></div>
+      <div class="search-item3"></div>
+      <div class="search-item4"></div>
+      <div class="search-item5"></div>
+      <div class="search-item6"></div>
+    </div>
+    <div class="paginator"></div>
+  </div>
+</div>
+
+
+// 검색결과 페이지 css
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 106px 918px 150px;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "header"
+    "body"
+    "footer";
+}
+
+.header { grid-area: header; }
+
+.footer { grid-area: footer; }
+
+.body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px 1fr 60px;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "search-info"
+    "search-result"
+    "paginator";
+  grid-area: body;
+}
+
+.search-info { grid-area: search-info; }
+
+.search-result {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "search-item1 search-item2 search-item3"
+    "search-item4 search-item5 search-item6";
+  grid-area: search-result;
+}
+
+.search-item1 { grid-area: search-item1; }
+
+.search-item2 { grid-area: search-item2; }
+
+.search-item3 { grid-area: search-item3; }
+
+.search-item4 { grid-area: search-item4; }
+
+.search-item5 { grid-area: search-item5; }
+
+.search-item6 { grid-area: search-item6; }
+
+.paginator { grid-area: paginator; }
+
+
+// 가게 상세페이지 html
+<div class="container">
+  <div class="footer"></div>
+  <div class="header"></div>
+  <div class="body">
+    <div class="store-name">
+      <div class="store-button"></div>
+      <div class="store-name---info"></div>
+    </div>
+    <div class="storeinfo-body">
+      <div class="menu">
+        <div class="menu-item"></div>
+        <div class="info-item"></div>
+        <div class="review-item"></div>
+      </div>
+      <div class="menu-detail"></div>
+    </div>
+  </div>
+</div>
+
+// 가게 상세페이지 css
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 106px 918px 150px;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "header"
+    "body"
+    "footer";
+}
+
+.footer { grid-area: footer; }
+
+.header { grid-area: header; }
+
+.body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 300px 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "store-name"
+    "storeinfo-body";
+  grid-area: body;
+}
+
+.store-name {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "store-name---info store-button";
+  grid-area: store-name;
+}
+
+.store-button { grid-area: store-button; }
+
+.store-name---info { grid-area: store-name---info; }
+
+.storeinfo-body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 96px 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "menu"
+    "menu-detail";
+  grid-area: storeinfo-body;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "menu-item info-item review-item";
+  grid-area: menu;
+}
+
+.menu-item { grid-area: menu-item; }
+
+.info-item { grid-area: info-item; }
+
+.review-item { grid-area: review-item; }
+
+.menu-detail { grid-area: menu-detail; }
+
+
+// 마이페이지 html
+<div class="container">
+  <div class="footer"></div>
+  <div class="header"></div>
+  <div class="body">
+    <div class="user-info">
+      <div class="mypage"></div>
+      <div class="mypage-detail">
+        <div class="user-info-detail"></div>
+        <div class="user-reivew"></div>
+      </div>
+    </div>
+    <div class="order-info">
+      <div class="order-info-title"></div>
+      <div class="order-detail"></div>
+      <div class="cart"></div>
+    </div>
+  </div>
+</div>
+
+// 마이페이지 css
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 106px 1800px 150px;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "header"
+    "body"
+    "footer";
+}
+
+.footer { grid-area: footer; }
+
+.header { grid-area: header; }
+
+.body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "user-info"
+    "order-info";
+  grid-area: body;
+}
+
+.user-info {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 150px 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "mypage"
+    "mypage-detail";
+  grid-area: user-info;
+}
+
+.mypage { grid-area: mypage; }
+
+.mypage-detail {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "user-info-detail"
+    "user-reivew";
+  grid-area: mypage-detail;
+}
+
+.user-info-detail { grid-area: user-info-detail; }
+
+.user-reivew { grid-area: user-reivew; }
+
+.order-info {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 150px 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "order-info-title"
+    "order-detail"
+    "cart";
+  grid-area: order-info;
+}
+
+.order-info-title { grid-area: order-info-title; }
+
+.order-detail { grid-area: order-detail; }
+
+.cart { grid-area: cart; }
